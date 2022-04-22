@@ -1,7 +1,5 @@
 #include "Circle.h"
 
-
-
 float Circle::getX()
 {
     return position.getX();
@@ -10,16 +8,6 @@ float Circle::getX()
 float Circle::getY()
 {
     return position.getY();
-}
-
-float Circle::getRadius()
-{
-    return radius;
-}
-
-Point Circle::getPosition()
-{
-    return position;
 }
 
 void Circle::setX(float x)
@@ -37,7 +25,17 @@ void Circle::setPosition(const Point &position)
     this->position = position;
 }
 
+Point Circle::getPosition()
+{
+    return position;
+}
+
 void Circle::setRadius(float radius)
 {
     this->radius = radius;
+}
+
+float Circle::getRadius()
+{
+    return radius;
 }

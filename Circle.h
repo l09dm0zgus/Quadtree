@@ -7,12 +7,12 @@ class Circle
 public:
     float getX();
     float getY();
-    float getRadius();
-    Point getPosition();
     void setX(float x);
     void setY(float y);
     void setPosition(const Point &position);
+    Point getPosition();
     void setRadius(float radius);
+    float getRadius();
 public:
     float radius;
     Point position;
