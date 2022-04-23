@@ -1,20 +1,12 @@
 #pragma once
+#include "Shape.h"
 
-#include "Point.h"
-
-class Circle
+class Circle : public Shape
 {
 public:
-    float getX();
-    float getY();
-    void setX(float x);
-    void setY(float y);
-    void setPosition(const Point &position);
-    Point getPosition();
     void setRadius(float radius);
     float getRadius();
 public:
     float radius;
-    Point position;
 };
 
