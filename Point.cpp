@@ -1,5 +1,10 @@
 #include "Point.h"
 
+Point::Point(int x, int y):x(x),y(y)
+{
+
+}
+
 void Point::setX(float x)
 {
     this->x = x;
@@ -19,3 +24,4 @@ float Point::getY()
 {
     return y;
 }
+

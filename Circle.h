@@ -4,9 +4,10 @@
 class Circle : public Shape
 {
 public:
-    void setRadius(float radius);
-    float getRadius();
-public:
+   EXPORT_API void setRadius(float radius);
+   EXPORT_API float getRadius();
+
+private:
     float radius;
 };
 

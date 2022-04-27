@@ -15,17 +15,17 @@ enum FittedSide
 class Quadtree
 {
 public:
-    Quadtree(int level , const Rectangle &bounds);
-    ~Quadtree();
-    void clear();
-    void insertRectangle(Rectangle* rectangle);
-    void insertCircle(Circle* circle);
-    Rectangle getBounds();
-    std::vector<Shape*> getShapes();
-    Quadtree *getNorthWestChild();
-    Quadtree *getNorthEastChild();
-    Quadtree *getSouthWestChild();
-    Quadtree *getSouthEastChild();
+   EXPORT_API Quadtree(int level , const Rectangle &bounds);
+   EXPORT_API ~Quadtree();
+   EXPORT_API void clear();
+   EXPORT_API void insertRectangle(Rectangle* rectangle);
+   EXPORT_API void insertCircle(Circle* circle);
+   EXPORT_API Rectangle getBounds();
+   EXPORT_API std::vector<Shape*> getShapes();
+   EXPORT_API Quadtree *getNorthWestChild();
+   EXPORT_API Quadtree *getNorthEastChild();
+   EXPORT_API Quadtree *getSouthWestChild();
+   EXPORT_API Quadtree *getSouthEastChild();
 private:
     void split();
     FittedSide getFittedSideOfQuadtreeForRectangle(Rectangle *rectangle);
@@ -33,7 +33,7 @@ private:
     FittedSide getFittedSideOfQuadtreeForShape(Shape *shape,float shapeWidth,float shapeHeight);
     Quadtree* getChildByFittedSide(FittedSide side);
     const int MAX_OBJECTS = 4;
-    const int MAX_LEVELS = 15;
+    const int MAX_LEVELS = 100;
     int level;
     std::vector<Shape*> shapes;
     Quadtree *northWest = nullptr;

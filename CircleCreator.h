@@ -5,7 +5,7 @@
 class CircleCreator : public IShapeCreator
 {
 public:
-    Shape *create() override;
+   EXPORT_API Shape *create() override;
 };
 
 

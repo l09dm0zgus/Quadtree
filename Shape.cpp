@@ -29,3 +29,4 @@ Point Shape::getPosition()
 {
     return position;
 }
+

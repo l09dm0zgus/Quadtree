@@ -6,6 +6,7 @@ CONFIG -= qt
 SOURCES += \
         Circle.cpp \
         CircleCreator.cpp \
+        LevelGenerator.cpp \
         Point.cpp \
         Quadtree.cpp \
         Rectangle.cpp \
@@ -16,7 +17,9 @@ SOURCES += \
 HEADERS += \
     Circle.h \
     CircleCreator.h \
+    Defines.h \
     IShapeCreator.h \
+    LevelGenerator.h \
     Point.h \
     Quadtree.h \
     Rectangle.h \

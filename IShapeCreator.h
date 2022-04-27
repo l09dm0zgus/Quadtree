@@ -4,6 +4,6 @@
 class IShapeCreator
 {
 public:
-    virtual ~IShapeCreator();
-    virtual Shape* create() = 0;
+   EXPORT_API virtual ~IShapeCreator(){};
+   EXPORT_API virtual Shape* create() = 0;
 };

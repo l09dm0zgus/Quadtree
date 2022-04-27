@@ -4,14 +4,14 @@
 class Rectangle : public Shape
 {
 public:
-    Rectangle(const Point &position,const Point &size);
-    Rectangle(float x, float y,float width,float height);
-    void  setSize(const Point &size);
-    Point getSize();
-    void setWidth(float width);
-    float getWidth();
-    void setHeight(float height);
-    float getHeight();
+   EXPORT_API Rectangle(const Point &position,const Point &size);
+   EXPORT_API Rectangle(float x, float y,float width,float height);
+   EXPORT_API void setSize(const Point &size);
+   EXPORT_API Point getSize();
+   EXPORT_API void setWidth(float width);
+   EXPORT_API float getWidth();
+   EXPORT_API void setHeight(float height);
+   EXPORT_API float getHeight();
 private:
     Point size;
 };

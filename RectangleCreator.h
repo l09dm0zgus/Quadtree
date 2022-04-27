@@ -5,7 +5,6 @@
 class RectangleCreator : public IShapeCreator
 {
 public:
-    ~RectangleCreator(){};;
-    Shape *create() override;
+   EXPORT_API Shape *create() override;
 };
 
